@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="1275dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/Rest_Of_Game_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="429dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Rest_of_game_divider"
+                android:layout_width="match_parent"
+                android:layout_height="423dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Player2_Layout"
+                    android:layout_width="303dp"
+                    android:layout_height="312dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/P2_info_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/P2_char_Image_L"
+                            android:layout_width="92dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/P2_char_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/architect" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/P2_info_L"
+                            android:layout_width="211dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/Player2_Name_L"
+                                android:layout_width="105dp"
+                                android:layout_height="36dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/Player2_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Player 2"
+                                    android:textColor="#040404"
+                                    android:textSize="20dp"
+                                    android:translationX="5dp"
+                                    android:translationY="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/player2_char_L"
+                                android:layout_width="102dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/P2_char_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Architect"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationX="5dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/P2_GInfo_layoout"
+                        android:layout_width="match_parent"
+                        android:layout_height="207dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/P2_labels_L"
+                            android:layout_width="146dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/P2_Gold_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="54dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_Gold_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="GOLD:"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="20dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P2_Cards_l"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_cards_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Cards:"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P2_Buildings_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_build_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Buildings:"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P2_points_label_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_Points_Label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="Points:"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/P2_vals_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/P2_gold_val_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="56dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_Gold_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="20dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P2_Card_Val_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_card_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P2_build_Val_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="47dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_Build_num2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="4"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P2_num_points_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/p2_num_points"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="12"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp"
+                                    android:translationY="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Center_Divider"
+                    android:layout_width="659dp"
+                    android:layout_height="489dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Player3_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="163dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/player3_play_L"
+                            android:layout_width="449dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:translationX="100dp">
+
+                            <LinearLayout
+                                android:id="@+id/player3_desc_L"
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/Player3_name_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="46dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/Player3_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Player 3"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/Player3_char_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="74dp"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/p3_char_image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/warlord" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/Player3_charName_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/P3_Char_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Warlord"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/p3_info_L"
+                                android:layout_width="178dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/P3_gold_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/P3_gold_label_L"
+                                        android:layout_width="108dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/P3_Gold_label"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:text="GOLD:"
+                                            android:textAlignment="center"
+                                            android:textColor="#000000"
+                                            android:textSize="15dp"
+                                            android:translationY="20dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/P3_goldAmount_L"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/P3_Gold_amount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="8"
+                                            android:textAlignment="center"
+                                            android:textColor="#000000"
+                                            android:textSize="15dp"
+                                            android:translationY="20dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/p3_Cards_label_l"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/p3_cards_L"
+                                        android:layout_width="108dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/P3_cards_label"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Cards:"
+                                            android:textAlignment="center"
+                                            android:textColor="#000000"
+                                            android:textSize="15dp"
+                                            android:translationY="10dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/p3_card_L"
+                                        android:layout_width="69dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/P3_card_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="3"
+                                            android:textAlignment="center"
+                                            android:textColor="#000000"
+                                            android:textSize="15dp"
+                                            android:translationY="10dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P3_builds_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/P3_builds_Label_L"
+                                        android:layout_width="108dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/P3_build_label"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Buildings:"
+                                            android:textAlignment="center"
+                                            android:textColor="#000000"
+                                            android:textSize="15dp"
+                                            android:translationY="15dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/P3_builds_num_L"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/p3_Build_num"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="0"
+                                            android:textAlignment="center"
+                                            android:textColor="#000000"
+                                            android:textSize="15dp"
+                                            android:translationY="15dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P3_Points_L"
+                                android:layout_width="147dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/P3_points_Label_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/P3_Points_Label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="Points"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="20dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P3_num_points_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/P3_num_points"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="30dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Actions_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="263dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/Draw_layout"
+                            android:layout_width="199dp"
+                            android:layout_height="261dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/Draw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/card_back_legend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Take_gold_layout"
+                            android:layout_width="219dp"
+                            android:layout_height="260dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/Gold_image_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/Gold_image"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="187dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/gold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Gold_Buttin_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/Take_Gold_Button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="72dp"
+                                    android:layout_weight="1"
+                                    android:text="GOLD"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Discard_Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="261dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/Discard"
+                                android:layout_width="match_parent"
+                                android:layout_height="258dp"
+                                app:srcCompat="@drawable/card_back_legend" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Right_Divider"
+                    android:layout_width="318dp"
+                    android:layout_height="320dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/P4_L"
+                        android:layout_width="match_parent"
+                        android:layout_height="318dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/P4_char_info_L"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/P4_char_image_l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/thief" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P4_info_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/P4_name_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/player4_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Player 4"
+                                        android:textColor="#040404"
+                                        android:textSize="20dp"
+                                        android:translationX="5dp"
+                                        android:translationY="5dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P4_Char_nameL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_char_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Thief"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationX="5dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/P4_Game_infoL"
+                            android:layout_width="match_parent"
+                            android:layout_height="243dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/P4_game_info_label_L"
+                                android:layout_width="157dp"
+                                android:layout_height="246dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/P4_Gold_lab_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="67dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_Gold_label2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="67dp"
+                                        android:layout_weight="1"
+                                        android:text="GOLD:"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="20dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/Cards_Lab_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="57dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_cards_label2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Cards:"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P4_Builds_Lab_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="62dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_build_label2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Buildings:"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="15dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P4_Points_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_Points_Label2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="Points:"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="10dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/P4_game_vals_L"
+                                android:layout_width="match_parent"
+                                android:layout_height="246dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/P4_gold_val_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="65dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_Gold_amount2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="20"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="20dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P4_cards_val_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="58dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_card_num2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="3"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P4_builds_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="64dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_Build_num"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="15dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/P4_points_L"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/p4_num_points2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="10dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/My_City_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/My_city_Devider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/my_city_layout"
+                    android:layout_width="102dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/My_city_Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="MY CITY"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building1_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/Building1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building2_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building3_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building4_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building5_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building6_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Building7_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/card_back_legend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Points_layout"
+                    android:layout_width="161dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/points_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Points"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/Points"
+                        android:layout_width="match_parent"
+                        android:layout_height="138dp"
+                        android:text="15"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BUILD"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:translationY="5dp" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DEMOLISH"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/My_Hand_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Hand_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/My_player"
+                    android:layout_width="321dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/my_player_layout_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/Player_layout"
+                            android:layout_width="203dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/Character_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="102dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/character_image_Layout"
+                                    android:layout_width="98dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/Charachter_Image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/assassin" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/Character_name_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:text="ASSASIN"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="20dp"
+                                        android:translationY="40dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Player_name_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/My_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Axl Martinez"
+                                    android:textAlignment="center"
+                                    android:textColor="#040404"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Gold_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Gold_Label"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:text="GOLD"
+                                android:textAlignment="center"
+                                android:textColor="#FF9800"
+                                android:textSize="40dp" />
+
+                            <TextView
+                                android:id="@+id/Gold_Num_p1"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:text="8"
+                                android:textAlignment="center"
+                                android:textColor="#FF9800"
+                                android:textSize="40dp"
+                                android:translationY="20dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/My_Hand"
+                    android:layout_width="641dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/my_handLayout"
+                        android:layout_width="639dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/Card1_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/card1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/card_back_legend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Card2_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:translationX="5dp">
+
+                            <ImageButton
+                                android:id="@+id/card2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/card_back_legend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Card3_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:translationX="10dp">
+
+                            <ImageButton
+                                android:id="@+id/card3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/card_back_legend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/card4_layout"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:translationX="15dp">
+
+                            <ImageButton
+                                android:id="@+id/card4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/card_back_legend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Extra_1"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:translationX="20dp">
+
+                            <ImageButton
+                                android:id="@+id/extra1_card"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@android:drawable/btn_dialog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Extra_2"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:translationX="25dp">
+
+                            <ImageButton
+                                android:id="@+id/extra2_card"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="TODO"
+                                app:srcCompat="@android:drawable/btn_dialog" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Ability_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Ability"
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/Ability_Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FF9800"
+                            android:backgroundTint="#FF9800"
+                            android:text="Use Ability"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/End_Turn_L"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/End_Turn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="END TURN"
+                            android:textAlignment="center"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
